@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laura Escribano Domínguez | Fullstack Engineer & Científica</title>
+    <meta
+      name="description"
+      content="Portfolio profesional de Laura Escribano Domínguez, ingeniera fullstack con experiencia en ciencia y tecnología."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="container mx-auto px-6 py-8 sticky top-0 z-50 backdrop-blur-md bg-[#080818]/90 border-b border-white/5"
+    >
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center gap-4">
+          <div class="w-4 h-4 rounded-full bg-[#00f7ff]"></div>
+          <span class="code-font text-base">Laura Escribano Domínguez</span>
+        </div>
+        <div class="flex gap-6 items-center">
+          <a href="#about" class="nav-link code-font" data-i18n="nav_about"
+            >/sobre-mi</a
+          >
+          <a
+            href="#projects"
+            class="nav-link code-font"
+            data-i18n="nav_projects"
+            >/proyectos</a
+          >
+          <a
+            href="#experience"
+            class="nav-link code-font"
+            data-i18n="nav_experience"
+            >/experiencia</a
+          >
+          <a href="#contact" class="nav-link code-font" data-i18n="nav_contact"
+            >/contacto</a
+          >
+          <div class="ml-4 flex gap-1">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="ca">CAT</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-6">
+      <!-- Hero Section -->
+      <section
+        class="min-h-[60vh] flex flex-col md:flex-row items-center gap-12 py-20"
+      >
+        <div class="md:w-1/3 flex-shrink-0 flex justify-center">
+          <img
+            src="20250503_131859.jpg"
+            alt="Laura Escribano"
+            class="avatar w-44 h-44 object-cover mb-6"
+          />
+        </div>
+        <div class="md:w-2/3">
+          <div class="code-font text-[#00f7ff] mb-2" data-i18n="hero_code">
+            ~/fullstack-developer
+          </div>
+          <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+            <span class="gradient-text" data-i18n="hero_title"
+              >Desarrolladora Web & Científica Digital</span
+            >
+          </h1>
+          <p class="text-xl text-gray-300 mb-6 max-w-2xl" data-i18n="hero_desc">
+            Profesional con doble formación en Anatomía Patológica y Desarrollo
+            Web. Comprometida con la innovación y la excelencia técnica, fusiono
+            rigor científico y creatividad digital para aportar soluciones
+            basadas en datos.
+          </p>
+        </div>
+      </section>
+
+      <!-- Terminal Skills -->
+      <div class="terminal code-font text-base">
+        <span class="text-[#00f7ff]">$</span>
+        <span data-i18n="skills_cmd">laura skills --show-all</span><br />
+        <span class="text-gray-400" data-i18n="skills_web_full"
+          >> Web: HTML5, CSS, JavaScript, PHP, MySQL, Git/GitHub</span
+        ><br />
+        <span class="text-gray-400" data-i18n="skills_science_full"
+          >> Científico: IHC, tinción histológica y citológica, microscopia,
+          procesamiento de tejidos</span
+        ><br />
+        <span class="text-gray-400" data-i18n="skills_tools_full"
+          >> Herramientas: VSCode, Eclipse, Photoshop, SolidWorks, 3D Max,
+          AutoCAD</span
+        ><br />
+        <span class="text-gray-400" data-i18n="skills_langs_full"
+          >> Idiomas: Español (nativo), Catalán (nativo), Inglés (B2), Francés
+          (A2)</span
+        >
+      </div>
+
+      <!-- Elevator Speech + Descargas + Redes -->
+      <section class="py-16 relative z-10" id="about">
+        <div
+          class="max-w-4xl mx-auto neon-card p-10 flex flex-col md:flex-row items-center gap-10"
+        >
+          <!-- Elevator Speech -->
+          <div class="flex-1">
+            <h2
+              class="text-2xl font-bold mb-4 gradient-text"
+              data-i18n="elevator_title"
+            >
+              Elevator Speech
+            </h2>
+            <p class="text-lg text-gray-200 mb-4" data-i18n="elevator_text">
+              Soy Laura Escribano, una profesional con doble formación en
+              desarrollo web y ciencias biomédicas. Mi pasión es crear
+              soluciones digitales que mejoren procesos reales, combinando rigor
+              científico, creatividad y tecnología. Destaco por mi capacidad de
+              análisis, adaptación y mi compromiso con la excelencia en cada
+              proyecto. ¿Buscas innovación y resultados? ¡Conectemos!
+            </p>
+            <div class="flex gap-4 mt-6">
+              <a
+                href="https://es.linkedin.com/in/laura-escribano-domínguez-07aa06206"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                class="text-[#00f7ff] hover:text-[#7c3aed] text-2xl"
+              >
+                <!-- LinkedIn SVG -->
+                <svg
+                  class="inline-block w-7 h-7"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/LauraEscribano"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                class="text-[#00f7ff] hover:text-[#7c3aed] text-2xl"
+              >
+                <!-- GitHub SVG -->
+                <svg
+                  class="inline-block w-7 h-7"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Descargas -->
+          <div class="flex-1">
+            <h2
+              class="text-2xl font-bold mb-4 gradient-text"
+              data-i18n="downloads_title"
+            >
+              Descarga mi CV y carta
+            </h2>
+            <div class="space-y-4">
+              <div>
+                <span class="font-semibold text-[#00f7ff]" data-i18n="cv_label"
+                  >CV:</span
+                >
+                <a
+                  href="cv-laura-escribano-es.pdf"
+                  download
+                  class="underline hover:text-[#7c3aed] ml-2"
+                  >Español</a
+                >
+                |
+                <a
+                  href="cv-laura-escribano-cat.pdf"
+                  download
+                  class="underline hover:text-[#7c3aed] ml-2"
+                  >Català</a
+                >
+                |
+                <a
+                  href="cv-laura-escribano-en.pdf"
+                  download
+                  class="underline hover:text-[#7c3aed] ml-2"
+                  >English</a
+                >
+                |
+              </div>
+              <div>
+                <span
+                  class="font-semibold text-[#00f7ff]"
+                  data-i18n="cover_label"
+                  >Carta presentación:</span
+                >
+                <a
+                  href="carta-laura-escribano-es.pdf"
+                  download
+                  class="underline hover:text-[#7c3aed] ml-2"
+                  >Español</a
+                >
+                |
+                <a
+                  href="carta-laura-escribano-cat.pdf"
+                  download
+                  class="underline hover:text-[#7c3aed] ml-2"
+                  >Català</a
+                >
+                |
+              </div>
+            </div>
+            <div class="mt-6">
+              <a
+                href="cv-laura-escribano-es.pdf"
+                download
+                class="inline-block bg-gradient-to-r from-[#00f7ff] to-[#7c3aed] text-black font-bold py-2 px-6 rounded-lg hover:opacity-90 transition-opacity mr-2"
+                data-i18n="cv_download_btn"
+              >
+                Descargar CV
+              </a>
+              <a
+                href="carta-laura-escribano-es.pdf"
+                download
+                class="inline-block bg-gradient-to-r from-[#7c3aed] to-[#00f7ff] text-black font-bold py-2 px-6 rounded-lg hover:opacity-90 transition-opacity"
+                data-i18n="cover_download_btn"
+              >
+                Descargar Carta
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section id="projects" class="py-20">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px w-16 bg-[#00f7ff]"></div>
+          <h2 class="code-font text-2xl" data-i18n="projects_title">
+            Proyectos destacados
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Proyecto 2 -->
+          <!-- Dentro de la sección de proyectos, después del Proyecto 2 -->
+          <article class="neon-card p-8 glow-effect">
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-[#00f7ff]/10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-[#00f7ff]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold" data-i18n="project3_title">
+                Juego Arkanoid con Phaser.js
+              </h3>
+            </div>
+            <p class="text-gray-400 mb-5" data-i18n="project3_desc">
+              Clásico juego de Arkanoid desarrollado con Phaser.js,
+              implementando mecánicas de juego, sistema de vidas, power-ups y
+              múltiples niveles. Incluye diseño responsive y controles táctiles.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Phaser.js</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <a
+                href="https://github.com/LauraEscribano/Arkanoid"
+                target="_blank"
+                class="text-[#00f7ff] hover:text-[#7c3aed] flex items-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+                <span data-i18n="project3_repo">Ver repositorio</span>
+              </a>
+            </div>
+          </article>
+          <!-- Proyecto 4: Gestión Club Esgrima -->
+          <article class="neon-card p-8 glow-effect">
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-[#00f7ff]/10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-[#00f7ff]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold" data-i18n="project4_title">
+                Sistema Gestión Club Esgrima
+              </h3>
+            </div>
+            <p class="text-gray-400 mb-5" data-i18n="project4_desc">
+              Aplicación web completa para gestión de club deportivo con
+              registro de miembros, calendario de eventos y sistema de reservas.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <a
+                href="https://github.com/LauraEscribano/GestionClubEsgrima"
+                target="_blank"
+                class="text-[#00f7ff] hover:text-[#7c3aed] flex items-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+                <span data-i18n="project4_repo">Ver repositorio</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 5: Genshin Impact -->
+          <article class="neon-card p-8 glow-effect">
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-[#00f7ff]/10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-[#00f7ff]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold" data-i18n="project5_title">
+                Portal Genshin Impact
+              </h3>
+            </div>
+            <p class="text-gray-400 mb-5" data-i18n="project5_desc">
+              Landing page interactiva del videojuego Genshin Impact con diseño
+              responsive, galería de personajes y sistema de filtrado.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <a
+                href="https://github.com/LauraEscribano/GenshinImpactPaginaPrincipal"
+                target="_blank"
+                class="text-[#00f7ff] hover:text-[#7c3aed] flex items-center gap-2"
+              >
+                <svg>...</svg>
+                <span data-i18n="project5_repo">Ver repositorio</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 6: Recetas Disney -->
+          <article class="neon-card p-8 glow-effect">
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 bg-[#00f7ff]/10 rounded-lg flex items-center justify-center"
+              >
+                <svg>...</svg>
+              </div>
+              <h3 class="text-2xl font-bold" data-i18n="project6_title">
+                Recetas Disney
+              </h3>
+            </div>
+            <p class="text-gray-400 mb-5" data-i18n="project6_desc">
+              Plataforma culinaria temática con recetas inspiradas en películas
+              Disney, incluye sistema de búsqueda y favoritos.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">API Rest</span>
+              <span class="tech-tag">Firebase</span>
+              <a
+                href="https://github.com/LauraEscribano/RecetasDisney"
+                target="_blank"
+                class="text-[#00f7ff] hover:text-[#7c3aed] flex items-center gap-2"
+              >
+                <svg>...</svg>
+                <span data-i18n="project6_repo">Ver repositorio</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experiencia -->
+      <section id="experience" class="py-20">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px w-16 bg-[#00f7ff]"></div>
+          <h2 class="code-font text-2xl" data-i18n="exp_title">
+            Experiencia profesional
+          </h2>
+        </div>
+        <div class="space-y-8">
+          <div class="neon-card p-8">
+            <div class="flex justify-between items-start flex-wrap gap-4 mb-2">
+              <h3 class="text-xl font-bold" data-i18n="exp1_title">
+                Pràcticant en Desenvolupament Web
+              </h3>
+              <span class="code-font text-[#00f7ff]" data-i18n="exp1_dates"
+                >Mar 2025 - Actualidad</span
+              >
+            </div>
+            <p class="text-gray-400 mb-2" data-i18n="exp1_place">
+              Assolit SL, Olesa de Montserrat
+            </p>
+            <ul class="list-disc ml-5 text-gray-300">
+              <li data-i18n="exp1_li1">
+                Programación e integración de sistemas de automatización para
+                edificios.
+              </li>
+              <li data-i18n="exp1_li2">
+                Optimización de procesos y desarrollo de soluciones web
+                innovadoras.
+              </li>
+            </ul>
+          </div>
+          <div class="neon-card p-8">
+            <div class="flex justify-between items-start flex-wrap gap-4 mb-2">
+              <h3 class="text-xl font-bold" data-i18n="exp2_title">
+                Tècnic en Anatomia Patològica i Citodiagnòstic
+              </h3>
+              <span class="code-font text-[#00f7ff]" data-i18n="exp2_dates"
+                >Set 2024 - Mar 2025</span
+              >
+            </div>
+            <p class="text-gray-400 mb-2" data-i18n="exp2_place">
+              Hospital del Mar, Barcelona
+            </p>
+            <ul class="list-disc ml-5 text-gray-300">
+              <li data-i18n="exp2_li1">
+                Gestión y procesamiento de muestras biológicas, tinción
+                histológica y citológica.
+              </li>
+              <li data-i18n="exp2_li2">
+                Operación de equipos de laboratorio avanzados y control de
+                calidad.
+              </li>
+            </ul>
+          </div>
+          <!-- NUEVA EXPERIENCIA -->
+          <div class="neon-card p-8">
+            <div class="flex justify-between items-start flex-wrap gap-4 mb-2">
+              <h3 class="text-xl font-bold" data-i18n="exp3_title">
+                Técnico en Anatomía Patológica y Citodiagnóstico
+              </h3>
+              <span class="code-font text-[#00f7ff]" data-i18n="exp3_dates"
+                >Sep 2019 - Oct 2019</span
+              >
+            </div>
+            <p class="text-gray-400 mb-2" data-i18n="exp3_place">
+              Hospital Sant Joan de Déu, Barcelona
+            </p>
+            <ul class="list-disc ml-5 text-gray-300">
+              <li data-i18n="exp3_li1">
+                Ejecución de técnicas de inmunohistoquímica (IHC) y tinción
+                histológica y citológica de muestras.
+              </li>
+              <li data-i18n="exp3_li2">
+                Operación y mantenimiento de equipos de laboratorio para
+                garantizar la precisión en los análisis y el control de calidad.
+              </li>
+            </ul>
+          </div>
+          <div class="neon-card p-8">
+            <div class="flex justify-between items-start flex-wrap gap-4 mb-2">
+              <h3 class="text-xl font-bold" data-i18n="exp4_title">
+                Prácticas en Anatomía Patológica y Citodiagnóstico
+              </h3>
+              <span class="code-font text-[#00f7ff]" data-i18n="exp4_dates"
+                >Sep 2018 - Feb 2019</span
+              >
+            </div>
+            <p class="text-gray-400 mb-2" data-i18n="exp4_place">
+              Hospital Sant Joan de Déu, Barcelona
+            </p>
+            <ul class="list-disc ml-5 text-gray-300">
+              <li data-i18n="exp4_li1">
+                Aplicación de técnicas de inmunohistoquímica (IHC) para control
+                de calidad.
+              </li>
+              <li data-i18n="exp4_li2">
+                Realización de tinciones histológicas y citológicas, análisis
+                microscópicos y procesamiento de tejidos.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Educación -->
+      <section class="py-20">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px w-16 bg-[#00f7ff]"></div>
+          <h2 class="code-font text-2xl" data-i18n="edu_title">
+            Formación académica
+          </h2>
+        </div>
+        <div class="space-y-8">
+          <div class="neon-card p-8">
+            <div class="flex justify-between items-start flex-wrap gap-4 mb-2">
+              <h3 class="text-xl font-bold" data-i18n="edu1_title">
+                CFGS Desenvolupament d'Aplicacions Web (DAW)
+              </h3>
+              <span class="code-font text-[#00f7ff]" data-i18n="edu1_dates"
+                >Set 2023 - Actualidad</span
+              >
+            </div>
+            <p class="text-gray-400" data-i18n="edu1_place">
+              Institut Daniel Blanxart, Olesa de Montserrat
+            </p>
+            <p class="text-gray-300 mt-2" data-i18n="edu1_desc">
+              Desarrollo Frontend, modelado de bases de datos, control de
+              versiones y gestión de código.
+            </p>
+          </div>
+          <div class="neon-card p-8">
+            <div class="flex justify-between items-start flex-wrap gap-4 mb-2">
+              <h3 class="text-xl font-bold" data-i18n="edu2_title">
+                CFGS Anatomia Patològica i Citodiagnòstic
+              </h3>
+              <span class="code-font text-[#00f7ff]" data-i18n="edu2_dates"
+                >Set 2017 - Jun 2019</span
+              >
+            </div>
+            <p class="text-gray-400" data-i18n="edu2_place">
+              Institut Miquel Martí i Pol, Cornellà de Llobregat
+            </p>
+            <p class="text-gray-300 mt-2" data-i18n="edu2_desc">
+              Control de calidad, tinción histológica y citológica, microscopia,
+              procesamiento de tejidos.
+            </p>
+          </div>
+          <!-- NUEVA FORMACIÓN -->
+          <div class="neon-card p-8">
+            <div class="flex justify-between items-start flex-wrap gap-4 mb-2">
+              <h3 class="text-xl font-bold" data-i18n="edu3_title">
+                Bachillerato Científico
+              </h3>
+              <span class="code-font text-[#00f7ff]" data-i18n="edu3_dates"
+                >Sep 2015 - Jun 2017</span
+              >
+            </div>
+            <p class="text-gray-400" data-i18n="edu3_place">
+              Institut Creu de Saba, Olesa de Montserrat
+            </p>
+            <p class="text-gray-300 mt-2" data-i18n="edu3_desc">
+              Proyecto Argó en la UAB, CRESA, Centro de Investigación en
+              Sanidad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contact" class="py-20">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px w-16 bg-[#00f7ff]"></div>
+          <h2 class="code-font text-2xl" data-i18n="contact_title">Contacto</h2>
+        </div>
+        <div class="neon-card p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold mb-4" data-i18n="contact_info_title">
+                Información de contacto
+              </h3>
+              <ul class="space-y-3">
+                <li class="flex items-center gap-3">
+                  <svg
+                    class="w-5 h-5 text-[#00f7ff]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="mailto:laura.escribano.dominguez@gmail.com"
+                    class="hover:text-[#00f7ff]"
+                    >laura.escribano.dominguez@gmail.com</a
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg
+                    class="w-5 h-5 text-[#00f7ff]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    ></path>
+                  </svg>
+                  <span>+34 661 785 262</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg
+                    class="w-5 h-5 text-[#00f7ff]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                  <span>Olesa de Montserrat, 08640</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-4" data-i18n="contact_form_title">
+                Envíame un mensaje
+              </h3>
+              <form class="space-y-4">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-300 mb-1"
+                    data-i18n="contact_name"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-2 bg-[#0a0a1b] border border-[#1e1e3f] rounded-lg focus:ring-[#00f7ff] focus:border-[#00f7ff] outline-none"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-300 mb-1"
+                    data-i18n="contact_email"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-2 bg-[#0a0a1b] border border-[#1e1e3f] rounded-lg focus:ring-[#00f7ff] focus:border-[#00f7ff] outline-none"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-300 mb-1"
+                    data-i18n="contact_message"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    class="w-full px-4 py-2 bg-[#0a0a1b] border border-[#1e1e3f] rounded-lg focus:ring-[#00f7ff] focus:border-[#00f7ff] outline-none"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="inline-block bg-gradient-to-r from-[#00f7ff] to-[#7c3aed] text-black font-bold py-2 px-6 rounded-lg hover:opacity-90 transition-opacity"
+                  data-i18n="contact_submit"
+                >
+                  Enviar mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#080818] border-t border-white/5 py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-gray-400" data-i18n="footer_text">
+          © 2025 Laura Escribano Domínguez. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      const langBtns = document.querySelectorAll(".lang-btn");
+      let currentLang = "es";
+
+      function translatePage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
+        });
+        langBtns.forEach((btn) => btn.classList.remove("active"));
+        document
+          .querySelector(`.lang-btn[data-lang="${lang}"]`)
+          .classList.add("active");
+      }
+
+      langBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          translatePage(btn.getAttribute("data-lang"));
+        });
+      });
+
+      // Traduce al cargar
+      document.addEventListener("DOMContentLoaded", () => {
+        translatePage(currentLang);
+      });
+    </script>
+
+    <script>
+      const translations = {
+        es: {
+          nav_about: "/sobre-mi",
+          nav_projects: "/proyectos",
+          nav_experience: "/experiencia",
+          nav_contact: "/contacto",
+          hero_code: "~/fullstack-developer",
+          hero_title: "Desarrolladora Web & Científica Digital",
+          hero_desc:
+            "Profesional con doble formación en Anatomía Patológica y Desarrollo Web. Comprometida con la innovación y la excelencia técnica, fusiono rigor científico y creatividad digital para aportar soluciones basadas en datos.",
+          skills_cmd: "laura skills --show-all",
+          skills_web: "> Web:",
+          skills_science: "> Científico:",
+          skills_tools: "> Herramientas:",
+          skills_langs: "> Idiomas:",
+          elevator_title: "Elevator Speech",
+          elevator_text:
+            "Soy Laura Escribano, una profesional con doble formación en desarrollo web y ciencias biomédicas. Mi pasión es crear soluciones digitales que mejoren procesos reales, combinando rigor científico, creatividad y tecnología. Destaco por mi capacidad de análisis, adaptación y mi compromiso con la excelencia en cada proyecto. ¿Buscas innovación y resultados? ¡Conectemos!",
+          downloads_title: "Descarga mi CV y carta",
+          cv_label: "CV:",
+          cover_label: "Carta presentación:",
+          cv_download_btn: "Descargar CV",
+          cover_download_btn: "Descargar Carta",
+          projects_title: "Proyectos destacados",
+          project1_title: "Sistema de Automatización de Edificios",
+          project1_desc:
+            "Desarrollo e integración de sistemas web para automatización de procesos en edificios inteligentes, optimizando eficiencia y gestión energética.",
+          project2_title: "Plataforma de Gestión de Laboratorio",
+          project2_desc:
+            "Aplicación web para control y seguimiento de muestras biológicas, digitalizando procesos y mejorando la trazabilidad en laboratorios clínicos.",
+          exp_title: "Experiencia profesional",
+          exp1_title: "Pràcticant en Desenvolupament Web",
+          exp1_dates: "Mar 2025 - Actualidad",
+          exp1_place: "Assolit SL, Olesa de Montserrat",
+          exp1_li1:
+            "Programación e integración de sistemas de automatización para edificios.",
+          exp1_li2:
+            "Optimización de procesos y desarrollo de soluciones web innovadoras.",
+          exp2_title: "Tècnic en Anatomia Patològica i Citodiagnòstic",
+          exp2_dates: "Set 2024 - Mar 2025",
+          exp2_place: "Hospital del Mar, Barcelona",
+          exp2_li1:
+            "Gestión y procesamiento de muestras biológicas, tinción histológica y citológica.",
+          exp2_li2:
+            "Operación de equipos de laboratorio avanzados y control de calidad.",
+          exp3_title: "Técnico en Anatomía Patológica y Citodiagnóstico",
+          exp3_dates: "Sep 2019 - Oct 2019",
+          exp3_place: "Hospital Sant Joan de Déu, Barcelona",
+          exp3_li1:
+            "Ejecución de técnicas de inmunohistoquímica (IHC) y tinción histológica y citológica de muestras.",
+          exp3_li2:
+            "Operación y mantenimiento de equipos de laboratorio para garantizar la precisión en los análisis y el control de calidad.",
+          exp4_title: "Prácticas en Anatomía Patológica y Citodiagnóstico",
+          exp4_dates: "Sep 2018 - Feb 2019",
+          exp4_place: "Hospital Sant Joan de Déu, Barcelona",
+          exp4_li1:
+            "Aplicación de técnicas de inmunohistoquímica (IHC) para control de calidad.",
+          exp4_li2:
+            "Realización de tinciones histológicas y citológicas, análisis microscópicos y procesamiento de tejidos.",
+          edu_title: "Formación académica",
+          edu1_title: "CFGS Desenvolupament d'Aplicacions Web (DAW)",
+          edu1_dates: "Set 2023 - Actualidad",
+          edu1_place: "Institut Daniel Blanxart, Olesa de Montserrat",
+          edu1_desc:
+            "Desarrollo Frontend, modelado de bases de datos, control de versiones y gestión de código.",
+          edu2_title: "CFGS Anatomia Patològica i Citodiagnòstic",
+          edu2_dates: "Set 2017 - Jun 2019",
+          edu2_place: "Institut Miquel Martí i Pol, Cornellà de Llobregat",
+          edu2_desc:
+            "Control de calidad, tinción histológica y citológica, microscopia, procesamiento de tejidos.",
+          edu3_title: "Bachillerato Científico",
+          edu3_dates: "Sep 2015 - Jun 2017",
+          edu3_place: "Institut Creu de Saba, Olesa de Montserrat",
+          edu3_desc:
+            "Proyecto Argó en la UAB, CRESA, Centro de Investigación en Sanidad.",
+          contact_title: "Contacto",
+          contact_info_title: "Información de contacto",
+          contact_form_title: "Envíame un mensaje",
+          contact_name: "Nombre",
+          contact_email: "Email",
+          contact_message: "Mensaje",
+          contact_submit: "Enviar mensaje",
+          footer_text:
+            "© 2025 Laura Escribano Domínguez. Todos los derechos reservados.",
+          contact_info_title: "Información de contacto",
+          contact_form_title: "Envíame un mensaje",
+          contact_name: "Nombre",
+          contact_email: "Email",
+          contact_message: "Mensaje",
+          contact_submit: "Enviar mensaje",
+          skills_web_full:
+            "> Web: HTML5, CSS, JavaScript, PHP, MySQL, Git/GitHub",
+          skills_science_full:
+            "> Científico: IHC, tinción histológica y citológica, microscopia, procesamiento de tejidos",
+          skills_tools_full:
+            "> Herramientas: VSCode, Eclipse, Photoshop, SolidWorks, 3D Max, AutoCAD",
+          skills_langs_full:
+            "> Idiomas: Español (nativo), Catalán (nativo), Inglés (B2), Francés (A2)",
+          project3_title: "Juego Arkanoid con Phaser.js",
+          project3_desc:
+            "Clásico juego de Arkanoid desarrollado con Phaser.js, implementando mecánicas de juego, sistema de vidas, power-ups y múltiples niveles. Incluye diseño responsive y controles táctiles.",
+          project3_repo: "Ver repositorio",
+          skills_web_full:
+            "> Web: HTML5, CSS, JavaScript, Phaser.js, PHP, MySQL, Git/GitHub",
+          project3_title: "Juego Arkanoid con Phaser.js",
+          project3_desc:
+            "Clásico juego de Arkanoid desarrollado con Phaser.js, implementando mecánicas de juego, sistema de vidas, power-ups y múltiples niveles. Incluye diseño responsive y controles táctiles.",
+          project3_repo: "Ver repositorio",
+          skills_web_full:
+            "> Web: HTML5, CSS, JavaScript, Phaser.js, PHP, MySQL, Git/GitHub",
+          project4_title: "Sistema Gestión Club Esgrima",
+          project4_desc:
+            "Aplicación web completa para gestión de club deportivo con registro de miembros, calendario de eventos y sistema de reservas.",
+          project4_repo: "Ver repositorio",
+          project5_title: "Portal Genshin Impact",
+          project5_desc:
+            "Landing page interactiva del videojuego Genshin Impact con diseño responsive, galería de personajes y sistema de filtrado.",
+          project5_repo: "Ver repositorio",
+          project6_title: "Recetas Disney",
+          project6_desc:
+            "Plataforma culinaria temática con recetas inspiradas en películas Disney, incluye sistema de búsqueda y favoritos.",
+          project6_repo: "Ver repositorio",
+        },
+        ca: {
+          nav_about: "/sobre-mi",
+          nav_projects: "/projectes",
+          nav_experience: "/experiència",
+          nav_contact: "/contacte",
+          hero_code: "~/fullstack-developer",
+          hero_title: "Desenvolupadora Web & Científica Digital",
+          hero_desc:
+            "Professional amb doble formació en Anatomia Patològica i Desenvolupament Web. Compromesa amb la innovació i l'excel·lència tècnica, fusiono rigor científic i creativitat digital per aportar solucions basades en dades.",
+          skills_cmd: "laura skills --show-all",
+          skills_web: "> Web:",
+          skills_science: "> Científic:",
+          skills_tools: "> Eines:",
+          skills_langs: "> Idiomes:",
+          elevator_title: "Elevator Speech",
+          elevator_text:
+            "Sóc la Laura Escribano, una professional amb doble formació en desenvolupament web i ciències biomèdiques. La meva passió és crear solucions digitals que millorin processos reals, combinant rigor científic, creativitat i tecnologia. Destaco per la meva capacitat d'anàlisi, adaptació i el meu compromís amb l'excel·lència en cada projecte. Busques innovació i resultats? Connectem!",
+          downloads_title: "Descarrega el meu CV i carta",
+          cv_label: "CV:",
+          cover_label: "Carta de presentació:",
+          cv_download_btn: "Descarregar CV",
+          cover_download_btn: "Descarregar Carta",
+          projects_title: "Projectes destacats",
+          project1_title: "Sistema d'Automatització d'Edificis",
+          project1_desc:
+            "Desenvolupament i integració de sistemes web per a l'automatització de processos en edificis intel·ligents, optimitzant eficiència i gestió energètica.",
+          project2_title: "Plataforma de Gestió de Laboratori",
+          project2_desc:
+            "Aplicació web per al control i seguiment de mostres biològiques, digitalitzant processos i millorant la traçabilitat en laboratoris clínics.",
+          exp_title: "Experiència professional",
+          exp1_title: "Pràcticant en Desenvolupament Web",
+          exp1_dates: "Mar 2025 - Actualitat",
+          exp1_place: "Assolit SL, Olesa de Montserrat",
+          exp1_li1:
+            "Programació i integració de sistemes d'automatització per a edificis.",
+          exp1_li2:
+            "Optimització de processos i desenvolupament de solucions web innovadores.",
+          exp2_title: "Tècnic en Anatomia Patològica i Citodiagnòstic",
+          exp2_dates: "Set 2024 - Mar 2025",
+          exp2_place: "Hospital del Mar, Barcelona",
+          exp2_li1:
+            "Gestió i processament de mostres biològiques, tinció histològica i citològica.",
+          exp2_li2:
+            "Operació d'equips de laboratori avançats i control de qualitat.",
+          exp3_title: "Tècnic en Anatomia Patològica i Citodiagnòstic",
+          exp3_dates: "Set 2019 - Oct 2019",
+          exp3_place: "Hospital Sant Joan de Déu, Barcelona",
+          exp3_li1:
+            "Execució de tècniques d’immunohistoquímica (IHC) i tinció histològica i citològica de mostres.",
+          exp3_li2:
+            "Operació i manteniment d’equips de laboratori per garantir l’exactitud en els anàlisis i el control de qualitat.",
+          exp4_title: "Pràcticant en Anatomia Patològica i Citodiagnòstic",
+          exp4_dates: "Set 2018 - Feb 2019",
+          exp4_place: "Hospital Sant Joan de Déu, Barcelona",
+          exp4_li1:
+            "Aplicació de tècniques d’immunohistoquímica (IHC) per al control de qualitat.",
+          exp4_li2:
+            "Realització de tincions histològiques i citològiques, anàlisis microscòpics i processament de teixits.",
+          edu_title: "Formació acadèmica",
+          edu1_title: "CFGS Desenvolupament d'Aplicacions Web (DAW)",
+          edu1_dates: "Set 2023 - Actualitat",
+          edu1_place: "Institut Daniel Blanxart, Olesa de Montserrat",
+          edu1_desc:
+            "Desenvolupament Frontend, modelatge de bases de dades, control de versions i gestió de codi.",
+          edu2_title: "CFGS Anatomia Patològica i Citodiagnòstic",
+          edu2_dates: "Set 2017 - Jun 2019",
+          edu2_place: "Institut Miquel Martí i Pol, Cornellà de Llobregat",
+          edu2_desc:
+            "Control de qualitat, tinció histològica i citològica, microscòpia, processament de teixits.",
+          edu3_title: "Batxillerat Científic",
+          edu3_dates: "Set 2015 - Jun 2017",
+          edu3_place: "Institut Creu de Saba, Olesa de Montserrat",
+          edu3_desc:
+            "Projecte Argó a la UAB, CRESA, Centre de Recerca en Sanitat.",
+          contact_title: "Contacte",
+          contact_info_title: "Informació de contacte",
+          contact_form_title: "Envia'm un missatge",
+          contact_name: "Nom",
+          contact_email: "Correu electrònic",
+          contact_message: "Missatge",
+          contact_submit: "Enviar missatge",
+          footer_text:
+            "© 2025 Laura Escribano Domínguez. Tots els drets reservats.",
+          contact_info_title: "Informació de contacte",
+          contact_form_title: "Envia'm un missatge",
+          contact_name: "Nom",
+          contact_email: "Correu electrònic",
+          contact_message: "Missatge",
+          contact_submit: "Enviar missatge",
+          skills_web_full:
+            "> Web: HTML5, CSS, JavaScript, PHP, MySQL, Git/GitHub",
+          skills_science_full:
+            "> Científic: IHC, tinció histològica i citològica, microscòpia, processament de teixits",
+          skills_tools_full:
+            "> Eines: VSCode, Eclipse, Photoshop, SolidWorks, 3D Max, AutoCAD",
+          skills_langs_full:
+            "> Idiomes: Català (natiu), Espanyol (natiu), Anglès (B2), Francès (A2)",
+          project3_title: "Joc Arkanoid amb Phaser.js",
+          project3_desc:
+            "Clàssic joc d'Arkanoid desenvolupat amb Phaser.js, implementant mecàniques de joc, sistema de vides, power-ups i múltiples nivells. Inclou disseny responsive i controls tàctils.",
+          project3_repo: "Veure repositori",
+          skills_web_full:
+            "> Web: HTML5, CSS, JavaScript, Phaser.js, PHP, MySQL, Git/GitHub",
+          project4_title: "Sistema Gestió Club d'Esgrima",
+          project4_desc:
+            "Aplicació web completa per a gestió de club esportiu amb registre de membres, calendari d'esdeveniments i sistema de reserves.",
+          project4_repo: "Veure repositori",
+          project5_title: "Portal Genshin Impact",
+          project5_desc:
+            "Pàgina d'inici interactiva del videojoc Genshin Impact amb disseny responsive, galeria de personatges i sistema de filtrat.",
+          project5_repo: "Veure repositori",
+          project6_title: "Receptes Disney",
+          project6_desc:
+            "Plataforma culinària temàtica amb receptes inspirades en pel·lícules Disney, inclou sistema de cerca i preferits.",
+        },
+        en: {
+          nav_about: "/about",
+          nav_projects: "/projects",
+          nav_experience: "/experience",
+          nav_contact: "/contact",
+          hero_code: "~/fullstack-developer",
+          hero_title: "Web Developer & Digital Scientist",
+          hero_desc:
+            "Professional with dual training in Pathological Anatomy and Web Development. Committed to innovation and technical excellence, I combine scientific rigor and digital creativity to deliver data-driven solutions.",
+          skills_cmd: "laura skills --show-all",
+          skills_web: "> Web:",
+          skills_science: "> Scientific:",
+          skills_tools: "> Tools:",
+          skills_langs: "> Languages:",
+          elevator_title: "Elevator Speech",
+          elevator_text:
+            "I'm Laura Escribano, a professional with dual training in web development and biomedical sciences. My passion is to create digital solutions that improve real processes, combining scientific rigor, creativity, and technology. I stand out for my analytical skills, adaptability, and commitment to excellence in every project. Looking for innovation and results? Let's connect!",
+          downloads_title: "Download my CV and cover letter",
+          cv_label: "CV:",
+          cover_label: "Cover letter:",
+          cv_download_btn: "Download CV",
+          cover_download_btn: "Download Letter",
+          projects_title: "Featured Projects",
+          project1_title: "Building Automation System",
+          project1_desc:
+            "Development and integration of web systems for process automation in smart buildings, optimizing efficiency and energy management.",
+          project2_title: "Laboratory Management Platform",
+          project2_desc:
+            "Web application for control and tracking of biological samples, digitizing processes and improving traceability in clinical laboratories.",
+          exp_title: "Professional Experience",
+          exp1_title: "Web Development Intern",
+          exp1_dates: "Mar 2025 - Present",
+          exp1_place: "Assolit SL, Olesa de Montserrat",
+          exp1_li1:
+            "Programming and integration of automation systems for buildings.",
+          exp1_li2:
+            "Process optimization and development of innovative web solutions.",
+          exp2_title: "Pathological Anatomy and Cytodiagnosis Technician",
+          exp2_dates: "Sep 2024 - Mar 2025",
+          exp2_place: "Hospital del Mar, Barcelona",
+          exp2_li1:
+            "Management and processing of biological samples, histological and cytological staining.",
+          exp2_li2:
+            "Operation of advanced laboratory equipment and quality control.",
+          exp3_title: "Pathological Anatomy and Cytodiagnosis Technician",
+          exp3_dates: "Sep 2019 - Oct 2019",
+          exp3_place: "Sant Joan de Déu Hospital, Barcelona",
+          exp3_li1:
+            "Execution of immunohistochemistry (IHC) techniques and histological and cytological staining of samples.",
+          exp3_li2:
+            "Operation and maintenance of laboratory equipment to ensure accuracy in analyses and quality control.",
+          exp4_title: "Pathological Anatomy and Cytodiagnosis Intern",
+          exp4_dates: "Sep 2018 - Feb 2019",
+          exp4_place: "Sant Joan de Déu Hospital, Barcelona",
+          exp4_li1:
+            "Application of immunohistochemistry (IHC) techniques for quality control.",
+          exp4_li2:
+            "Performing histological and cytological stains, microscopic analysis, and tissue processing.",
+          edu_title: "Academic Background",
+          edu1_title: "Higher Degree in Web Application Development (DAW)",
+          edu1_dates: "Sep 2023 - Present",
+          edu1_place: "Institut Daniel Blanxart, Olesa de Montserrat",
+          edu1_desc:
+            "Frontend development, database modeling, version control, and code management.",
+          edu2_title: "Higher Degree in Pathological Anatomy and Cytodiagnosis",
+          edu2_dates: "Sep 2017 - Jun 2019",
+          edu2_place: "Institut Miquel Martí i Pol, Cornellà de Llobregat",
+          edu2_desc:
+            "Quality control, histological and cytological staining, microscopy, tissue processing.",
+          edu3_title: "Scientific Baccalaureate",
+          edu3_dates: "Sep 2015 - Jun 2017",
+          edu3_place: "Creu de Saba Institute, Olesa de Montserrat",
+          edu3_desc: "Argó Project at UAB, CRESA, Research Center in Health.",
+          contact_title: "Contact",
+          contact_info_title: "Contact Information",
+          contact_form_title: "Send me a message",
+          contact_name: "Name",
+          contact_email: "Email",
+          contact_message: "Message",
+          contact_submit: "Send message",
+          footer_text: "© 2025 Laura Escribano Domínguez. All rights reserved.",
+          contact_info_title: "Contact Information",
+          contact_form_title: "Send me a message",
+          contact_name: "Name",
+          contact_email: "Email",
+          contact_message: "Message",
+          contact_submit: "Send message",
+          skills_web_full:
+            "> Web: HTML5, CSS, JavaScript, PHP, MySQL, Git/GitHub",
+          skills_science_full:
+            "> Scientific: IHC, histological and cytological staining, microscopy, tissue processing",
+          skills_tools_full:
+            "> Tools: VSCode, Eclipse, Photoshop, SolidWorks, 3D Max, AutoCAD",
+          skills_langs_full:
+            "> Languages: Spanish (native), Catalan (native), English (B2), French (A2)",
+          project3_title: "Arkanoid Game with Phaser.js",
+          project3_desc:
+            "Classic Arkanoid game developed with Phaser.js, implementing game mechanics, life system, power-ups and multiple levels. Includes responsive design and touch controls.",
+          project3_repo: "View repository",
+          skills_web_full:
+            "> Web: HTML5, CSS, JavaScript, Phaser.js, PHP, MySQL, Git/GitHub",
+          project4_title: "Fencing Club Management System",
+          project4_desc:
+            "Complete web application for sports club management with member registration, event calendar and booking system.",
+          project4_repo: "View repository",
+          project5_title: "Genshin Impact Portal",
+          project5_desc:
+            "Interactive landing page for Genshin Impact video game with responsive design, character gallery and filtering system.",
+          project5_repo: "View repository",
+          project6_title: "Disney Recipes",
+          project6_desc:
+            "Culinary platform with Disney movie-inspired recipes, including search system and favorites feature.",
+          project6_repo: "View repository",
+        },
+      };
+    </script>
+  </body>
+</html>
