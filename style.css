@@ -113,6 +113,13 @@ body::after {
     background: linear-gradient(90deg, var(--primary), var(--secondary));
     color: #181826;
 }
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
 @media (max-width: 900px) {
     .grid-cols-2, .md\:grid-cols-2 { grid-template-columns: 1fr !important;}
 }
@@ -157,6 +164,12 @@ body::after {
         font-size: 0.8em;
     }
 }
+
+.contact-email {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 
 #arkanoid-demo {
     position: fixed;
