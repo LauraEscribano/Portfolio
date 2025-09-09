@@ -189,15 +189,18 @@ body::after {
     cursor: pointer;
 }
 
-/* Móvil */
 @media (max-width: 768px) {
-    nav > div.flex.gap-6 { /* tus links */
+    nav {
+        position: relative; 
+    }
+
+    nav > div.flex.gap-6 { 
         display: none;
         flex-direction: column;
         background: var(--surface);
         position: absolute;
-        top: 60px;
-        right: 10px;
+        top: 100%; 
+        right: 0; 
         border-radius: 12px;
         padding: 1em;
         box-shadow: 0 0 20px rgba(0,247,255,0.2);
