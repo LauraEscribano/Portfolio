@@ -50,7 +50,6 @@ body::after {
     z-index: 1;
 }
 .neon-card:hover {
-    transform: translateY(-6px) scale(1.01);
     box-shadow: 0 0 60px 0 rgba(124,58,237,0.16), 0 8px 32px 0 rgba(0,247,255,0.10);
 }
 .neon-card::before {
@@ -120,3 +119,14 @@ body::after {
 @media (max-width: 600px) {
     .grid-cols-4, .md\:grid-cols-4 { grid-template-columns: 1fr !important;}
 }
+
+#arkanoid-demo {
+    position: fixed;
+    z-index: 9999; 
+}
+
+#arkanoid-demo > div {
+    position: relative;
+    z-index: 10000; 
+}
+
