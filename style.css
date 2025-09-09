@@ -119,6 +119,44 @@ body::after {
 @media (max-width: 600px) {
     .grid-cols-4, .md\:grid-cols-4 { grid-template-columns: 1fr !important;}
 }
+/* Para teléfonos móviles (max-width 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de fuente general */
+    }
+
+    .neon-card {
+        border-radius: 12px;
+        padding: 1em;
+        margin: 0.5em;
+    }
+
+    .tech-tag {
+        font-size: 0.8em;
+        padding: 0.2em 0.5em;
+    }
+
+    .grid-cols-2, .grid-cols-4, 
+    .md\:grid-cols-2, .md\:grid-cols-4 {
+        grid-template-columns: 1fr !important; /* Una columna por fila */
+        gap: 0.5em; /* Espaciado más ajustado */
+    }
+
+    .nav-link {
+        font-size: 0.9em; /* Ajuste de links en navbar */
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-width: 2px;
+    }
+
+    .lang-btn {
+        padding: 3px 6px;
+        font-size: 0.8em;
+    }
+}
 
 #arkanoid-demo {
     position: fixed;
